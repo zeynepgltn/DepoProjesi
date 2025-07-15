@@ -1,0 +1,83 @@
+﻿<div class="container mt-4">
+    <h2>Ürün Güncelle</h2>
+
+    <div id="messageContainer"></div>
+
+    <form id="updateProductForm">
+        <div class="mb-3">
+            <label>Ürün ID:</label>
+            <input class="form-control" type="number" id="UrunId" min="1" placeholder="Örn: 5" required />
+            <small class="text-muted">Güncellenecek ürünün ID'sini girin.</small>
+        </div>
+
+        <div class="mb-3">
+            <label>Ürün Adı:</label>
+            <input class="form-control" type="text" id="UrunAdi" placeholder="Örn: Asus Laptop Model X" required />
+        </div>
+
+        <div class="mb-3">
+            <label>Fiyat:</label>
+            <input class="form-control" type="number" id="Fiyat" step="0.01" min="0" placeholder="Örn: 4999.99" required />
+        </div>
+
+        <div class="mb-3">
+            <label>Stok:</label>
+            <input class="form-control" type="number" id="Stok" min="0" placeholder="Örn: 25" required />
+        </div>
+
+        <div class="mb-3">
+            <label>Kategori:</label>
+            <input class="form-control" type="text" id="Kategori" placeholder="Örn: Laptop" required />
+        </div>
+
+        <div class="mb-3">
+            <label>Emin misiniz?</label>
+            <select class="form-select" id="onay" required>
+                <option value="">Seçiniz</option>
+                <option value="Evet">Evet</option>
+                <option value="Hayır">Hayır</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Güncelle</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#updateProductForm').submit(function (e) {
+                e.preventDefault();
+
+                const onay = $('#onay').val();
+                if (onay !== "Evet") {
+                    $('#messageContainer').html('<div class="alert alert-warning mt-3">Güncelleme işlemi iptal edildi.</div>');
+                    return;
+                }
+
+                const id = $('#UrunId').val();
+
+                const product = {
+                    urunAdi: $('#UrunAdi').val(),
+                    fiyat: parseFloat($('#Fiyat').val()),
+                    stok: parseInt($('#Stok').val()),
+                    kategori: $('#Kategori').val()
+                };
+
+                $.ajax({
+                    url: `/api/ProductApi/update/${id}`,
+                    type: 'PUT',
+                    contentType: 'application/json',
+                    data: JSON.stringify(product),
+                    success: function (response) {
+                        $('#messageContainer').html('<div class="alert alert-success mt-3">Ürün başarıyla güncellendi.</div>');
+                        $('#updateProductForm')[0].reset();
+                    },
+                    error: function (xhr) {
+                        $('#messageContainer').html('<div class="alert alert-danger mt-3">Hata oluştu: ' + xhr.responseText + '</div>');
+                    }
+                });
+            });
+        });
+    </script>
+}

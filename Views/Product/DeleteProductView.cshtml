@@ -1,0 +1,55 @@
+﻿<div class="container mt-4">
+    <h2>Ürün Silme</h2>
+
+    <div id="messageContainer"></div>
+
+    <form id="deleteProductForm">
+        <div class="mb-3">
+            <label>Silinecek Ürün ID:</label>
+            <input class="form-control" type="number" id="urunId" min="1" placeholder="Örn: 5" required />
+            <small class="text-muted">Silmek istediğiniz ürünün ID'sini girin.</small>
+        </div>
+
+        <div class="mb-3">
+            <label>Emin misiniz?</label>
+            <select class="form-select" id="onay" required>
+                <option value="">Seçiniz</option>
+                <option value="Evet">Evet</option>
+                <option value="Hayır">Hayır</option>
+            </select>
+            <small class="text-muted">Evet derseniz ürün silinir.</small>
+        </div>
+
+        <button type="submit" class="btn btn-danger">Sil</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#deleteProductForm').submit(function (e) {
+                e.preventDefault();
+
+                const id = $('#urunId').val();
+                const onay = $('#onay').val();
+
+                if (onay !== "Evet") {
+                    $('#messageContainer').html('<div class="alert alert-warning mt-3">Silme işlemi iptal edildi.</div>');
+                    return;
+                }
+
+                $.ajax({
+                    url: `/api/ProductApi/delete/${id}`,
+                    type: 'DELETE',
+                    success: function (response) {
+                        $('#messageContainer').html('<div class="alert alert-success mt-3">' + response.message + '</div>');
+                        $('#deleteProductForm')[0].reset();
+                    },
+                    error: function (xhr) {
+                        $('#messageContainer').html('<div class="alert alert-danger mt-3">Silme işlemi başarısız: ' + xhr.responseText + '</div>');
+                    }
+                });
+            });
+        });
+    </script>
+}

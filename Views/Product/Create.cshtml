@@ -1,0 +1,81 @@
+﻿<div class="container mt-4">
+    <h2>Yeni Ürün Oluştur</h2>
+
+    <div id="messageContainer"></div>
+
+    <form id="productForm">
+        <div class="mb-3">
+            <label for="UrunAdi" class="form-label">Ürün Adı</label>
+            <input type="text" id="UrunAdi" class="form-control" placeholder="Örn: Kalem" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="Fiyat" class="form-label">Fiyat (₺)</label>
+            <input type="number" id="Fiyat" class="form-control" step="0.01" min="0" placeholder="Örn: 15.99" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="Stok" class="form-label">Stok Miktarı</label>
+            <input type="number" id="Stok" class="form-control" min="0" placeholder="Örn: 50" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="Kategori" class="form-label">Kategori</label>
+            <input type="text" id="Kategori" class="form-control" placeholder="Örn: Kırtasiye" required />
+        </div>
+
+        <button type="submit" class="btn btn-success">YENİ ÜRÜN EKLE</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Giriş sırasında negatif değer engelle
+            $('#Fiyat, #Stok').on('input', function () {
+                let val = parseFloat($(this).val());
+                if (val < 0) {
+                    $(this).val('');
+                }
+            });
+
+            $('#productForm').submit(function (e) {
+                e.preventDefault();
+
+                const fiyat = parseFloat($('#Fiyat').val());
+                const stok = parseInt($('#Stok').val());
+                const mesaj = $('#messageContainer');
+                mesaj.empty();
+
+                // ❌ NaN (Geçersiz Sayı) kontrolü
+                if (isNaN(fiyat) || isNaN(stok)) {
+                    mesaj.append('<div class="alert alert-danger mt-3">Fiyat ve stok sayısal olmalıdır!</div>');
+                    return;
+                }
+
+                // ✅ Devam et
+                const product = {
+                    UrunAdi: $('#UrunAdi').val(),
+                    Fiyat: fiyat,
+                    Stok: stok,
+                    Kategori: $('#Kategori').val()
+                };
+
+                $.ajax({
+                    url: '/api/ProductApi/create',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(product),
+                    success: function () {
+                        mesaj.append('<div class="alert alert-success mt-3">Ürün başarıyla eklendi!</div>');
+                        $('#productForm')[0].reset();
+                    },
+                    error: function () {
+                        mesaj.append('<div class="alert alert-danger mt-3">İşlem sırasında bir hata oluştu.</div>');
+                    }
+                });
+            });
+        });
+    </script>
+}
+

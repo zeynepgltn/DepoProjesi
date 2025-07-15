@@ -1,0 +1,65 @@
+﻿<div class="container mt-4">
+    <h2>Stok Güncelle</h2>
+
+    <div id="messageContainer"></div>
+
+    <form id="stokGuncelleForm">
+        <div class="mb-3">
+            <label>Ürün ID:</label>
+            <input type="number" class="form-control" id="UrunId" required placeholder="Ürün ID">
+        </div>
+
+        <div class="mb-3">
+            <label>Yeni Stok:</label>
+            <input type="number" class="form-control" id="Stok" required placeholder="Yeni Stok">
+        </div>
+
+        <div class="mb-3">
+            <label>Emin misiniz?</label>
+            <select class="form-select" id="onay" required>
+                <option value="">Seçiniz</option>
+                <option value="Evet">Evet</option>
+                <option value="Hayır">Hayır</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-warning">Stok Güncelle</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#stokGuncelleForm').submit(function (e) {
+                e.preventDefault();
+
+                const onay = $('#onay').val();
+                if (onay !== "Evet") {
+                    $('#messageContainer').html('<div class="alert alert-warning mt-3">Güncelleme iptal edildi.</div>');
+                    return;
+                }
+
+                const id = $('#UrunId').val();
+                const yeniStok = parseInt($('#Stok').val());
+
+                const payload = {
+                    stok: yeniStok
+                };
+
+                $.ajax({
+                    url: `/api/ProductApi/updatestock/${id}`,
+                    type: 'PATCH',
+                    contentType: 'application/json',
+                    data: JSON.stringify(payload),
+                    success: function () {
+                        $('#messageContainer').html('<div class="alert alert-success mt-3">Stok başarıyla güncellendi.</div>');
+                        $('#stokGuncelleForm')[0].reset();
+                    },
+                    error: function () {
+                        $('#messageContainer').html('<div class="alert alert-danger mt-3">Stok güncellenemedi.</div>');
+                    }
+                });
+            });
+        });
+    </script>
+}

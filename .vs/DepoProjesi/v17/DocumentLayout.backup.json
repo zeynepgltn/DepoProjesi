@@ -1,0 +1,127 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeyne\\source\\repos\\depoprojesi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeyne\\source\\repos\\depoprojesi\\views\\product\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:views\\product\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeyne\\source\\repos\\depoprojesi\\controllers\\productapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:controllers\\productapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeyne\\source\\repos\\depoprojesi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeyne\\source\\repos\\depoprojesi\\data\\warehousedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:data\\warehousedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Controllers\\ProductController.cs*",
+              "RelativeToolTip": "Controllers\\ProductController.cs*",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T13:00:36.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Views\\Product\\List.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\List.cshtml",
+              "ToolTip": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Views\\Product\\List.cshtml",
+              "RelativeToolTip": "Views\\Product\\List.cshtml",
+              "ViewState": "AgIAAJMAAAAAAAAAAADwv6IAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-15T12:57:01.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Models\\Employee.cs",
+              "RelativeToolTip": "Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T12:56:58.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WarehouseDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Data\\WarehouseDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\WarehouseDbContext.cs",
+              "ToolTip": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Data\\WarehouseDbContext.cs",
+              "RelativeToolTip": "Data\\WarehouseDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T12:56:56.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductApiController.cs",
+              "DocumentMoniker": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Controllers\\ProductApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductApiController.cs",
+              "ToolTip": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Controllers\\ProductApiController.cs",
+              "RelativeToolTip": "Controllers\\ProductApiController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwGQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T12:52:05.978Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

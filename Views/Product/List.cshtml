@@ -1,0 +1,105 @@
+﻿<div class="container mt-4">
+    <h2 class="mb-4">Ürün Listesi</h2>
+
+    <!-- Filtreleme Formu -->
+    <form id="filterForm" class="row g-3">
+        <div class="col-md-4">
+            <label class="form-label">Ürün Adı:</label>
+            <input type="text" class="form-control" name="arama" id="arama" placeholder="Ürün adı ara" />
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Kategori:</label>
+            <select class="form-select select2" name="kategori" id="kategori">
+                <option value="">Tümü</option>
+            </select>
+        </div>
+
+        <div class="col-md-2 d-flex align-items-end">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="stoktaVarOlanlar" />
+                <label class="form-check-label">Stokta Olanlar</label>
+            </div>
+        </div>
+
+        <div class="col-md-2 d-flex align-items-end">
+            <button type="submit" class="btn btn-primary w-100">Filtrele</button>
+        </div>
+    </form>
+
+    <!-- Ürünler Tablosu -->
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ürün Adı</th>
+                <th>Kategori</th>
+                <th>Stok</th>
+            </tr>
+        </thead>
+        <tbody id="urunTablosu"></tbody>
+    </table>
+</div>
+
+<a href="/api/ProductApi/export" class="btn btn-success" download>
+    Excel’e Aktar
+</a>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Kategori dropdown'ını API'den doldur
+            $.get('/api/ProductApi/kategoriler', function (data) {
+                const kategoriSelect = $('#kategori');
+                kategoriSelect.empty().append('<option value="">Tümü</option>');
+                data.forEach(k => {
+                    kategoriSelect.append(`<option value="${k}">${k}</option>`);
+                });
+            });
+
+            // Ürünleri API'den çek ve tabloya yaz
+            function urunleriYukle() {
+                const arama = $('#arama').val();
+                const kategori = $('#kategori').val();
+                const stoktaVar = $('#stoktaVarOlanlar').is(':checked');
+
+                $.ajax({
+                    url: '/api/ProductApi/list',
+                    type: 'GET',
+                    data: {
+                        arama: arama,
+                        kategori: kategori,
+                        stoktaVarOlanlar: stoktaVar
+                    },
+                    success: function (data) {
+                        const tablo = $('#urunTablosu');
+                        tablo.empty();
+                        data.forEach(item => {
+                            tablo.append(`
+                                <tr>
+                                    <td>${item.urunId}</td>
+                                    <td>${item.urunAdi}</td>
+                                    <td>${item.kategori}</td>
+                                    <td>${item.stok}</td>
+                                </tr>
+                            `);
+                        });
+                    },
+                    error: function () {
+                        alert("Ürünler getirilemedi.");
+                    }
+                });
+            }
+
+            $('#filterForm').submit(function (e) {
+                e.preventDefault();
+                urunleriYukle();
+            });
+
+            // Sayfa açıldığında hem kategori dropdown’ını hem ürünleri yükle
+            urunleriYukle();
+
+            $('.select2').select2();
+        });
+    </script>
+}
