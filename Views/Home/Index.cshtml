@@ -1,43 +1,40 @@
-@{
-    ViewData["Title"] = "Dashboard";
-}
-
-<div class="container mt-4">
-    <h1 class="mb-4">Dashboard</h1>
-
-    <div class="row">
-        <div class="col-md-6 mb-4">
-            <div class="card text-white bg-primary h-100">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h3 class="card-title">Total Products</h3>
-                            <p class="card-text display-4">@ViewBag.TotalProducts</p>
-                        </div>
-                        <i class="fas fa-box fa-4x"></i>
-                    </div>
+<div class="row g-4 justify-content-center">
+    <!-- Toplam Ürün -->
+    <div class="col-sm-6 col-lg-5">
+        <div class="card bg-dark text-white shadow-sm h-100">
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <div>
+                    <h5 class="card-title text-uppercase">Toplam Ürün</h5>
+                    <p class="display-5 fw-bold mb-0" id="totalProduct">...</p>
                 </div>
-                <div class="card-footer d-flex justify-content-between align-items-center">
-                    <a href="/Product/List" class="text-white">View Details <i class="fas fa-arrow-circle-right"></i></a>
-                </div>
+                <i class="fas fa-box fa-3x"></i>
             </div>
         </div>
+    </div>
 
-        <div class="col-md-6 mb-4">
-            <div class="card text-white bg-warning h-100">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h3 class="card-title">Low Stock Products</h3>
-                            <p class="card-text display-4">@ViewBag.LowStockProducts</p>
-                        </div>
-                        <i class="fas fa-exclamation-triangle fa-4x"></i>
-                    </div>
+    <!-- Düþük Stoklu Ürünler -->
+    <div class="col-sm-6 col-lg-5">
+        <div class="card bg-warning text-dark shadow-sm h-100">
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <div>
+                    <h5 class="card-title text-uppercase">Düþük Stoklu Ürünler</h5>
+                    <p class="display-5 fw-bold mb-0" id="lowStockProduct">...</p>
                 </div>
-                <div class="card-footer d-flex justify-content="between align-items-center">
-                    <a href="/Product/List?stoktaVarOlanlar=true" class="text-white">View Details <i class="fas fa-arrow-circle-right"></i></a>
-                </div>
+                <i class="fas fa-exclamation-triangle fa-3x"></i>
             </div>
         </div>
     </div>
 </div>
+
+
+@section Scripts {
+    <script>
+        $(function () {
+            $.get("/api/ProductApi/dashboard-ozet", function (data) {
+                $('#totalProduct').text(data.toplamUrun);
+                $('#lowStockProduct').text(data.dusukStok);
+            });
+        });
+    </script>
+}
+

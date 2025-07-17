@@ -122,7 +122,6 @@ public class ProductApiController : ControllerBase
         await _context.SaveChangesAsync();
         return Ok(product);
     }
-
     public class UpdateStockDto
     {
         public int Stok { get; set; }
@@ -156,4 +155,20 @@ public class ProductApiController : ControllerBase
 
         return Ok(new { message = "Ürün silindi" });
     }
+
+    // Dashboard Özet
+    [HttpGet("dashboard-ozet")]
+    public IActionResult GetDashboardOzet()
+    {
+        var toplamUrun = _context.Urunler.Count();
+        var dusukStok = _context.Urunler.Count(u => u.Stok < 10);
+
+        return Ok(new
+        {
+            toplamUrun,
+            dusukStok
+        });
+    }
+
+
 }

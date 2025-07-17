@@ -1,4 +1,5 @@
 using DepoProjesi.Data;
+using DepoProjesi.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,16 +14,14 @@ namespace DepoProjesi.Controllers
         {
             _context = context;
         }
-
         public IActionResult Index()
         {
-            var totalProducts = _context.Urunler.Count();
-            var lowStockProducts = _context.Urunler.Count(p => p.Stok < 10);
+            var dusukStokLimiti = 10;
 
-            ViewBag.TotalProducts = totalProducts;
-            ViewBag.LowStockProducts = lowStockProducts;
+            ViewBag.TotalProducts = _context.Urunler.Count();
+            ViewBag.LowStockProducts = _context.Urunler.Count(u => u.Stok < dusukStokLimiti);
 
-            return View();
+            return View(); 
         }
     }
-}
+    }

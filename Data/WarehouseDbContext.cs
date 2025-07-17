@@ -9,5 +9,8 @@ namespace DepoProjesi.Data
 
         public DbSet<Product> Urunler { get; set; }
         public DbSet<Employee> Personeller { get; set; }
+
+        public DbSet<StockHistory> StockGecmisi { get; set; }
+
     }
 }

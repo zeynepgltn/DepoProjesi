@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DepoProjesi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+194d21ac4528db0905f0ff44aec360e73dc05386")]
 [assembly: System.Reflection.AssemblyProductAttribute("DepoProjesi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DepoProjesi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

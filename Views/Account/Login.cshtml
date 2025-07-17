@@ -1,30 +1,61 @@
-﻿<div class="container mt-5">
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card">
+            <div class="card shadow-sm">
                 <div class="card-body">
                     <h2 class="text-center mb-4">Giriş Yap</h2>
 
-                    <form method="post">
+                    <form id="loginForm">
                         <div class="mb-3">
                             <label>Email:</label>
-                            <input type="text" class="form-control" name="email" placeholder="Email" required />
+                            <input type="text" class="form-control" name="email" required />
                         </div>
 
                         <div class="mb-3">
                             <label>Şifre:</label>
-                            <input type="password" class="form-control" name="sifre" placeholder="Şifre" required />
+                            <input type="password" class="form-control" name="sifre" required />
                         </div>
 
                         <button type="submit" class="btn btn-primary w-100">Giriş Yap</button>
                     </form>
 
-                    @if (ViewBag.Hata != null)
-                    {
-                        <div class="alert alert-danger mt-3">@ViewBag.Hata</div>
-                    }
+                    <div id="loginHata" class="alert alert-danger mt-3 d-none"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#loginForm').submit(function (e) {
+                e.preventDefault();
+
+                const email = $('input[name="email"]').val();
+                const sifre = $('input[name="sifre"]').val();
+
+                $.ajax({
+                    url: '/api/AccountApi/login',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ email, sifre }),
+                    success: function (response) {
+                        window.location.href = "/Home";
+                    },
+                    error: function (xhr) {
+                        let msg = "Bilinmeyen hata oluştu.";
+                        if (xhr.responseJSON && xhr.responseJSON.message) {
+                            msg = xhr.responseJSON.message;
+                        }
+                        $('#loginHata').text(msg).removeClass('d-none');
+                    }
+                });
+            });
+        });
+    </script>
+}

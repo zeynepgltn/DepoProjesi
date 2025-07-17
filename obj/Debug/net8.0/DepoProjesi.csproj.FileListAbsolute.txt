@@ -177,3 +177,4 @@ C:\Users\zeyne\source\repos\DepoProjesi\obj\Debug\net8.0\refint\DepoProjesi.dll
 C:\Users\zeyne\source\repos\DepoProjesi\obj\Debug\net8.0\DepoProjesi.pdb
 C:\Users\zeyne\source\repos\DepoProjesi\obj\Debug\net8.0\DepoProjesi.genruntimeconfig.cache
 C:\Users\zeyne\source\repos\DepoProjesi\obj\Debug\net8.0\ref\DepoProjesi.dll
+C:\Users\zeyne\source\repos\DepoProjesi\obj\Debug\net8.0\DepoProjesi.sourcelink.json

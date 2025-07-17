@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeyne\\source\\repos\\depoprojesi\\data\\warehousedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:data\\warehousedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeyne\\source\\repos\\depoprojesi\\models\\stockhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:models\\stockhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +27,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StockHistory.cs",
+              "DocumentMoniker": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Models\\StockHistory.cs",
+              "RelativeDocumentMoniker": "Models\\StockHistory.cs",
+              "ToolTip": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Models\\StockHistory.cs",
+              "RelativeToolTip": "Models\\StockHistory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T12:37:37.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WarehouseDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Data\\WarehouseDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\WarehouseDbContext.cs",
+              "ToolTip": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Data\\WarehouseDbContext.cs",
+              "RelativeToolTip": "Data\\WarehouseDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA4wAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T12:31:47.308Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -28,6 +63,14 @@
             {
               "$type": "Bookmark",
               "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
