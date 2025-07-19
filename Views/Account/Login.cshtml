@@ -44,8 +44,11 @@
                     type: 'POST',
                     contentType: 'application/json',
                     data: JSON.stringify({ email, sifre }),
+                    xhrFields: {
+                        withCredentials: true // Cookie'yi alabilmek için şart
+                    },
                     success: function (response) {
-                        window.location.href = "/Home";
+                        window.location.href = "/";
                     },
                     error: function (xhr) {
                         let msg = "Bilinmeyen hata oluştu.";

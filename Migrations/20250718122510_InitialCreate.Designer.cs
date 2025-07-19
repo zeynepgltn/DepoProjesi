@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DepoProjesi.Migrations
 {
     [DbContext(typeof(WarehouseDbContext))]
-    [Migration("20250717124705_Stock")]
-    partial class Stock
+    [Migration("20250718122510_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -90,6 +90,39 @@ namespace DepoProjesi.Migrations
                     b.HasKey("UrunId");
 
                     b.ToTable("Urunler");
+                });
+
+            modelBuilder.Entity("DepoProjesi.Models.StockHistory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("GuncellenmeTarihi")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Kullanici")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("OncekiStok")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UrunAdi")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UrunId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("YeniStok")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("StockGecmisi");
                 });
 #pragma warning restore 612, 618
         }

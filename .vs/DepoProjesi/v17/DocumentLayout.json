@@ -1,14 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\",
+  "WorkspaceRootPath": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeyne\\source\\repos\\depoprojesi\\data\\warehousedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\desktop\\depoprojesi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\desktop\\depoprojesi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\desktop\\depoprojesi\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\desktop\\depoprojesi\\controllers\\accountapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:controllers\\accountapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\desktop\\depoprojesi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\desktop\\depoprojesi\\controllers\\migrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:controllers\\migrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\desktop\\depoprojesi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\desktop\\depoprojesi\\models\\stockhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:models\\stockhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\desktop\\depoprojesi\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\desktop\\depoprojesi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\desktop\\depoprojesi\\data\\warehousedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:data\\warehousedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeyne\\source\\repos\\depoprojesi\\models\\stockhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:models\\stockhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\desktop\\depoprojesi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,28 +71,147 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "StockHistory.cs",
-              "DocumentMoniker": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Models\\StockHistory.cs",
-              "RelativeDocumentMoniker": "Models\\StockHistory.cs",
-              "ToolTip": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Models\\StockHistory.cs",
-              "RelativeToolTip": "Models\\StockHistory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvxIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T12:37:37.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T12:55:05.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T12:51:44.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountApiController.cs",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Controllers\\AccountApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountApiController.cs",
+              "ToolTip": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Controllers\\AccountApiController.cs",
+              "RelativeToolTip": "Controllers\\AccountApiController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvzIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T12:51:12.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T12:51:03.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MigrationController.cs",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Controllers\\MigrationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MigrationController.cs",
+              "ToolTip": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Controllers\\MigrationController.cs",
+              "RelativeToolTip": "Controllers\\MigrationController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAcwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T12:47:49.264Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WarehouseDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Data\\WarehouseDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\WarehouseDbContext.cs",
-              "ToolTip": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\Data\\WarehouseDbContext.cs",
-              "RelativeToolTip": "Data\\WarehouseDbContext.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA4wAwAAAA9AAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwBQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T12:31:47.308Z",
+              "WhenOpened": "2025-07-18T12:44:00.833Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T12:42:35.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T12:42:35.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Models\\Employee.cs",
+              "RelativeToolTip": "Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T12:42:25.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-18T11:22:44.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StockHistory.cs",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Models\\StockHistory.cs",
+              "RelativeDocumentMoniker": "Models\\StockHistory.cs",
+              "ToolTip": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Models\\StockHistory.cs",
+              "RelativeToolTip": "Models\\StockHistory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T12:37:37.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WarehouseDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Data\\WarehouseDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\WarehouseDbContext.cs",
+              "ToolTip": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\Data\\WarehouseDbContext.cs",
+              "RelativeToolTip": "Data\\WarehouseDbContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvxAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T12:31:47.308Z"
             }
           ]
         },
@@ -71,6 +230,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }

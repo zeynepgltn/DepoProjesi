@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\DepoProjesi.csproj": {}
+    "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\DepoProjesi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\DepoProjesi.csproj": {
+    "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\DepoProjesi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\DepoProjesi.csproj",
+        "projectUniqueName": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\DepoProjesi.csproj",
         "projectName": "DepoProjesi",
-        "projectPath": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\DepoProjesi.csproj",
-        "packagesPath": "C:\\Users\\zeyne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zeyne\\source\\repos\\DepoProjesi\\obj\\",
+        "projectPath": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\DepoProjesi.csproj",
+        "packagesPath": "C:\\Users\\Zeynep\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\zeyne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Zeynep\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

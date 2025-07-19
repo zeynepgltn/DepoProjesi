@@ -119,7 +119,7 @@ namespace DepoProjesi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("StokGecmisi");
+                    b.ToTable("StockGecmisi");
                 });
 #pragma warning restore 612, 618
         }
