@@ -21,48 +21,20 @@
             </table>
         </div>
     </div>
-
-    <!-- En Çok / En Az Tükenen Ürünler -->
-    <div class="card">
-        <div class="card-header bg-info text-white fw-semibold">En Çok / En Az Tüketilen Ürünler</div>
-        <div class="card-body p-0">
-            <table class="table table-bordered m-0" id="stockChangeTable">
-                <thead>
-                    <tr>
-                        <th>Ürün</th>
-                        <th>Stok Değişimi</th>
-                        <th>Son Güncelleme</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
-    </div>
 </div>
 
 @section Scripts {
     <script>
         $(function () {
             // Düşük stokları çek
-            $.get("/api/ProductApi/low-stock", function (data) {
+            $.get("/api/StockApi/low-stock", function (data) {
+                console.log("LOW STOCK DATA:", data);
                 const tbody = $("#lowStockTable tbody");
                 data.forEach(p => {
                     tbody.append(`<tr>
                         <td>${p.urunAdi}</td>
                         <td>${p.kategori}</td>
                         <td class="text-danger fw-bold">${p.stok}</td>
-                    </tr>`);
-                });
-            });
-
-            // En çok / az tüketilenleri çek
-            $.get("/api/ProductApi/stock-changes", function (data) {
-                const tbody = $("#stockChangeTable tbody");
-                data.forEach(x => {
-                    tbody.append(`<tr>
-                        <td>${x.urunAdi}</td>
-                        <td class="${x.degisim < 0 ? 'text-danger' : 'text-success'}">${x.degisim}</td>
-                        <td>${x.tarih}</td>
                     </tr>`);
                 });
             });

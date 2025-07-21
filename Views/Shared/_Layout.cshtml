@@ -47,8 +47,15 @@
                                     <li><a class="dropdown-item" asp-controller="Product" asp-action="UpdateStockView">Sadece Stok Güncelle</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-controller="Stock" asp-action="Tracking">Stok Takip</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="stockDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Stok Takip
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-controller="Stock" asp-action="Tracking">Düşük Stok</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Stock" asp-action="Tuketim">Tüketim Analizi</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Stock" asp-action="Chart">Stok Değişim Grafiği</a></li>
+                                </ul>
                             </li>
                         }
                         <li class="nav-item">

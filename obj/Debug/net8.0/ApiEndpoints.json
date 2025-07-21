@@ -160,5 +160,35 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DepoProjesi.Controllers.StockApiController",
+    "Method": "GetLowStockProducts",
+    "RelativePath": "api/StockApi/low-stock",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DepoProjesi.Controllers.StockApiController",
+    "Method": "GetStockChanges",
+    "RelativePath": "api/StockApi/stock-changes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DepoProjesi.Controllers.StockApiController",
+    "Method": "GetStockChangesChart",
+    "RelativePath": "api/StockApi/stock-changes-chart",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

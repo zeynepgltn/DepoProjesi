@@ -4,13 +4,24 @@ using Microsoft.AspNetCore.Mvc;
 namespace DepoProjesi.Controllers
 {
     [Authorize]
+    [Authorize]
     public class StockController : Controller
     {
-        // GET: /Stock/Tracking
         public IActionResult Tracking()
         {
-            // StockTracking.cshtml dosyasını aç
             return View("StockTracking");
         }
+
+        public IActionResult Chart()
+        {
+            return View("StockChart");
+        }
+
+        public IActionResult Tuketim()
+        {
+            return View("Consumed");
+        }
+
     }
+
 }

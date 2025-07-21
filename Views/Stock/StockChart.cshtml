@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Stok Değişim Grafiği";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4 fw-bold">Haftalık Stok Değişim Grafiği</h2>
+
+    <div class="card">
+        <div class="card-header bg-secondary text-white fw-semibold">7 Günlük Stok Değişimi</div>
+        <div class="card-body">
+            <canvas id="stokChart" height="100"></canvas>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        $(function () {
+            $.get("/api/StockApi/stock-changes-chart", function (data) {
+                console.log("CHART DATA:", data);
+                const labels = data.map(x => x.tarih);
+                const values = data.map(x => x.toplamDegisim);
+
+                const ctx = document.getElementById('stokChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Stok Değişimi',
+                            data: values,
+                            borderWidth: 2,
+                            fill: true,
+                            tension: 0.3,
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    stepSize: 1
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+}

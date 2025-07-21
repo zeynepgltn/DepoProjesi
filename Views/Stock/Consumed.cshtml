@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Tüketim Analizi";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4 fw-bold">En Çok / En Az Tüketilen Ürünler</h2>
+
+    <div class="card">
+        <div class="card-header bg-info text-white fw-semibold">Tüketim Listesi</div>
+        <div class="card-body p-0">
+            <table class="table table-bordered m-0" id="stockChangeTable">
+                <thead>
+                    <tr>
+                        <th>Ürün</th>
+                        <th>Stok Değişimi</th>
+                        <th>Son Güncelleme</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(function () {
+            $.get("/api/StockApi/stock-changes", function (data) {
+                console.log("STOCK CHANGE DATA:", data);
+                const tbody = $("#stockChangeTable tbody");
+                data.forEach(x => {
+                    tbody.append(`<tr>
+                        <td>${x.urunAdi}</td>
+                        <td class="${x.degisim < 0 ? 'text-danger' : 'text-success'}">${x.degisim}</td>
+                        <td>${x.tarih}</td>
+                    </tr>`);
+                });
+            });
+        });
+    </script>
+}

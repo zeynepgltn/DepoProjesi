@@ -1,9 +1,10 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using DepoProjesi.Data;
+using DepoProjesi.Helpers;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using DepoProjesi.Data;
-using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace DepoProjesi
 {
@@ -13,6 +14,7 @@ namespace DepoProjesi
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddSingleton<MailHelper>();
             builder.Services.AddControllersWithViews();
             builder.Services.AddSession();
 

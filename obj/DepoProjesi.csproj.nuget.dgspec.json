@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\DepoProjesi.csproj": {}
+    "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar Üniversitesi\\Masaüstü\\DepoProjesi\\DepoProjesi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\DepoProjesi.csproj": {
+    "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar Üniversitesi\\Masaüstü\\DepoProjesi\\DepoProjesi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\DepoProjesi.csproj",
+        "projectUniqueName": "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar Üniversitesi\\Masaüstü\\DepoProjesi\\DepoProjesi.csproj",
         "projectName": "DepoProjesi",
-        "projectPath": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\DepoProjesi.csproj",
+        "projectPath": "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar Üniversitesi\\Masaüstü\\DepoProjesi\\DepoProjesi.csproj",
         "packagesPath": "C:\\Users\\Zeynep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zeynep\\Desktop\\DepoProjesi\\obj\\",
+        "outputPath": "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar Üniversitesi\\Masaüstü\\DepoProjesi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -67,6 +67,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.6, )"
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.7.0, )"
             }
           },
           "imports": [

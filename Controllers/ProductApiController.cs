@@ -2,11 +2,16 @@
 using DepoProjesi.Data;
 using DepoProjesi.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
+using DepoProjesi.Helpers; 
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class ProductApiController : ControllerBase
 {
+
     private readonly WarehouseDbContext _context;
 
     public ProductApiController(WarehouseDbContext context)
@@ -28,8 +33,7 @@ public class ProductApiController : ControllerBase
         return Ok(product);
     }
 
-
-    // READ (Tüm Ürünleri Listele)
+    // READ - Tüm ürünler
     [HttpGet("list")]
     public IActionResult GetAll(string? arama, string? kategori, bool? stoktaVarOlanlar)
     {
@@ -41,12 +45,13 @@ public class ProductApiController : ControllerBase
         if (!string.IsNullOrEmpty(kategori))
             query = query.Where(p => p.Kategori == kategori);
 
-        if (stoktaVarOlanlar.HasValue && stoktaVarOlanlar.Value)
+        if (stoktaVarOlanlar == true)
             query = query.Where(p => p.Stok > 0);
 
-        var result = query.ToList();
-        return Ok(result);
+        return Ok(query.ToList());
     }
+
+    // READ - Kategoriler
     [HttpGet("kategoriler")]
     public IActionResult Kategoriler()
     {
@@ -54,17 +59,18 @@ public class ProductApiController : ControllerBase
             .Select(u => u.Kategori)
             .Distinct()
             .ToList();
+
         return Ok(kategoriler);
     }
+
+    // EXPORT - Excel
     [HttpGet("export")]
     public IActionResult ExportToExcel()
     {
         var urunler = _context.Urunler.ToList();
-
         using var workbook = new XLWorkbook();
         var ws = workbook.Worksheets.Add("Ürünler");
 
-        // Başlıklar
         ws.Cell(1, 1).Value = "ID";
         ws.Cell(1, 2).Value = "Ürün Adı";
         ws.Cell(1, 3).Value = "Kategori";
@@ -91,9 +97,7 @@ public class ProductApiController : ControllerBase
             "Urunler.xlsx");
     }
 
-
-
-    // READ (ID ile)
+    // READ - ID ile
     [HttpGet("{id}")]
     public IActionResult GetById(int id)
     {
@@ -104,7 +108,6 @@ public class ProductApiController : ControllerBase
         return Ok(product);
     }
 
-
     // UPDATE
     [HttpPut("update/{id}")]
     public async Task<IActionResult> Update(int id, [FromBody] Product updated)
@@ -113,15 +116,32 @@ public class ProductApiController : ControllerBase
         if (product == null)
             return NotFound();
 
+        var oncekiStok = product.Stok;
+
         product.UrunAdi = updated.UrunAdi;
         product.Kategori = updated.Kategori;
         product.Fiyat = updated.Fiyat;
         product.Stok = updated.Stok;
         product.EklenmeTarihi = DateTime.Now;
 
+        if (oncekiStok != updated.Stok)
+        {
+            var log = new StockHistory
+            {
+                UrunId = product.UrunId,
+                UrunAdi = product.UrunAdi,
+                OncekiStok = oncekiStok,
+                YeniStok = updated.Stok,
+                GuncellenmeTarihi = DateTime.Now,
+                Kullanici = User.Identity?.Name ?? "ApiKullanici"
+            };
+            _context.StockGecmisi.Add(log);
+        }
+
         await _context.SaveChangesAsync();
         return Ok(product);
     }
+
     public class UpdateStockDto
     {
         public int Stok { get; set; }
@@ -134,13 +154,28 @@ public class ProductApiController : ControllerBase
         if (product == null)
             return NotFound("Ürün bulunamadı.");
 
+        var oncekiStok = product.Stok;
+
         product.Stok = body.Stok;
         product.EklenmeTarihi = DateTime.Now;
+
+        if (oncekiStok != body.Stok)
+        {
+            var log = new StockHistory
+            {
+                UrunId = product.UrunId,
+                UrunAdi = product.UrunAdi,
+                OncekiStok = oncekiStok,
+                YeniStok = body.Stok,
+                GuncellenmeTarihi = DateTime.Now,
+                Kullanici = User.Identity?.Name ?? "ApiKullanici"
+            };
+            _context.StockGecmisi.Add(log);
+        }
 
         await _context.SaveChangesAsync();
         return Ok(new { message = "Stok güncellendi." });
     }
-
 
     // DELETE
     [HttpDelete("delete/{id}")]
@@ -150,13 +185,25 @@ public class ProductApiController : ControllerBase
         if (product == null)
             return NotFound();
 
+        // Silme log'u
+        var log = new StockHistory
+        {
+            UrunId = product.UrunId,
+            UrunAdi = product.UrunAdi,
+            OncekiStok = product.Stok,
+            YeniStok = 0,
+            GuncellenmeTarihi = DateTime.Now,
+            Kullanici = User.Identity?.Name ?? "ApiKullanici"
+        };
+        _context.StockGecmisi.Add(log);
+
         _context.Urunler.Remove(product);
         await _context.SaveChangesAsync();
 
-        return Ok(new { message = "Ürün silindi" });
+        return Ok(new { message = "Ürün silindi ve stok geçmişi kaydedildi." });
     }
 
-    // Dashboard Özet
+    // DASHBOARD
     [HttpGet("dashboard-ozet")]
     public IActionResult GetDashboardOzet()
     {
