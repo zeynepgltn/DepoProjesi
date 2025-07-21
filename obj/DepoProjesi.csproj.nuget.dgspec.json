@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar Üniversitesi\\Masaüstü\\DepoProjesi\\DepoProjesi.csproj": {}
+    "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\DepoProjesi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar Üniversitesi\\Masaüstü\\DepoProjesi\\DepoProjesi.csproj": {
+    "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\DepoProjesi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar Üniversitesi\\Masaüstü\\DepoProjesi\\DepoProjesi.csproj",
+        "projectUniqueName": "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\DepoProjesi.csproj",
         "projectName": "DepoProjesi",
-        "projectPath": "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar Üniversitesi\\Masaüstü\\DepoProjesi\\DepoProjesi.csproj",
+        "projectPath": "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\DepoProjesi.csproj",
         "packagesPath": "C:\\Users\\Zeynep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar Üniversitesi\\Masaüstü\\DepoProjesi\\obj\\",
+        "outputPath": "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -57,6 +57,14 @@
             "ClosedXML": {
               "target": "Package",
               "version": "[0.105.0, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.20, )"
+            },
+            "Hangfire.SqlServer": {
+              "target": "Package",
+              "version": "[1.8.20, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

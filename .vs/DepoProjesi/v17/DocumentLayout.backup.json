@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar \u00DCniversitesi\\Masa\u00FCst\u00FC\\DepoProjesi\\",
+  "WorkspaceRootPath": "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\onedrive - manisa celal bayar \u00FCniversitesi\\masa\u00FCst\u00FC\\depoprojesi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\onedrive - manisa celal bayar \u00FCniversitesi\\masa\u00FCst\u00FC\\depoprojesi\\helpers\\mailhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\source\\repos\\depoprojesi\\helpers\\mailhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:helpers\\mailhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\onedrive - manisa celal bayar \u00FCniversitesi\\masa\u00FCst\u00FC\\depoprojesi\\controllers\\stockapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\source\\repos\\depoprojesi\\controllers\\stockapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:controllers\\stockapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\source\\repos\\depoprojesi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|c:\\users\\zeynep\\source\\repos\\depoprojesi\\helpers\\stockchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B4633B3-A752-4830-B198-358E716F3A52}|DepoProjesi.csproj|solutionrelative:helpers\\stockchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +38,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar \u00DCniversitesi\\Masa\u00FCst\u00FC\\DepoProjesi\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar \u00DCniversitesi\\Masa\u00FCst\u00FC\\DepoProjesi\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-21T14:17:28.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MailHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar \u00DCniversitesi\\Masa\u00FCst\u00FC\\DepoProjesi\\Helpers\\MailHelper.cs",
-              "RelativeDocumentMoniker": "Helpers\\MailHelper.cs",
-              "ToolTip": "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar \u00DCniversitesi\\Masa\u00FCst\u00FC\\DepoProjesi\\Helpers\\MailHelper.cs*",
-              "RelativeToolTip": "Helpers\\MailHelper.cs*",
-              "ViewState": "AgIAACYAAAAAAAAAAAAswDMAAAAAAAAAAAAAAA==",
+              "Title": "StockApiController.cs",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\Controllers\\StockApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StockApiController.cs",
+              "ToolTip": "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\Controllers\\StockApiController.cs",
+              "RelativeToolTip": "Controllers\\StockApiController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAvwCkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T14:12:03.516Z",
+              "WhenOpened": "2025-07-21T15:06:41.491Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "StockApiController.cs",
-              "DocumentMoniker": "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar \u00DCniversitesi\\Masa\u00FCst\u00FC\\DepoProjesi\\Controllers\\StockApiController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StockApiController.cs",
-              "ToolTip": "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar \u00DCniversitesi\\Masa\u00FCst\u00FC\\DepoProjesi\\Controllers\\StockApiController.cs",
-              "RelativeToolTip": "Controllers\\StockApiController.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAswGAAAAAfAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAswEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T13:39:39.985Z",
+              "WhenOpened": "2025-07-21T15:04:57.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StockChecker.cs",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\Helpers\\StockChecker.cs",
+              "RelativeDocumentMoniker": "Helpers\\StockChecker.cs",
+              "ToolTip": "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\Helpers\\StockChecker.cs",
+              "RelativeToolTip": "Helpers\\StockChecker.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T14:58:00.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MailHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\Helpers\\MailHelper.cs",
+              "RelativeDocumentMoniker": "Helpers\\MailHelper.cs",
+              "ToolTip": "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\Helpers\\MailHelper.cs*",
+              "RelativeToolTip": "Helpers\\MailHelper.cs*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCQAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T14:12:03.516Z",
               "EditorCaption": ""
             }
           ]

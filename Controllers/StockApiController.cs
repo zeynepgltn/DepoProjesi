@@ -39,19 +39,6 @@ namespace DepoProjesi.Controllers
                 })
                 .ToListAsync();
 
-            // Eğer kritik ürün varsa, yöneticiyi bilgilendir
-            if (result.Any())
-            {
-                foreach (var urun in result)
-                {
-                    await _mailHelper.SendLowStockAlertAsync(
-                        "zeynepgultenn@gmail.com",  // uyarı alacak kişi
-                        urun.urunAdi,
-                        urun.stok
-                    );
-                }
-            }
-
             return Ok(result);
         }
 

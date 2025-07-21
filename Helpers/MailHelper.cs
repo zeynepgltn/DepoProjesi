@@ -13,11 +13,12 @@ namespace DepoProjesi.Helpers
             _config = config;
         }
 
-        public async Task SendLowStockAlertAsync(string toEmail, string urunAdi, int mevcutStok)
+        public async Task SendLowStockSummaryAsync(List<(string urunAdi, string kategori, int stok)> urunler)
         {
             try
             {
-                Console.WriteLine("📤 Mail gönderimi başlıyor...");
+                if (urunler == null || urunler.Count == 0)
+                    return;
 
                 var smtpClient = new SmtpClient(_config["EmailSettings:SmtpServer"])
                 {
@@ -29,19 +30,24 @@ namespace DepoProjesi.Helpers
                     EnableSsl = true,
                 };
 
+                string body = " Aşağıdaki ürünlerin stoğu kritik seviyeye düşmüştür:\n\n";
+
+                foreach (var u in urunler)
+                {
+                    body += $"- {u.urunAdi} ({u.kategori}) → Stok: {u.stok}\n";
+                }
+
                 var mailMessage = new MailMessage
                 {
                     From = new MailAddress(_config["EmailSettings:SenderEmail"]),
-                    Subject = "🔴 Kritik Stok Uyarısı",
-                    Body = $"'{urunAdi}' ürününün stoğu kritik seviyeye ({mevcutStok}) düştü.",
+                    Subject = " Kritik Stok Özeti",
+                    Body = body,
                     IsBodyHtml = false,
                 };
 
-                mailMessage.To.Add(toEmail);
+                mailMessage.To.Add("zeynepgultenn@gmail.com");
 
                 await smtpClient.SendMailAsync(mailMessage);
-
-                Console.WriteLine("✅ Mail başarıyla gönderildi.");
             }
             catch (Exception ex)
             {
@@ -49,8 +55,6 @@ namespace DepoProjesi.Helpers
                 File.AppendAllText("mail_hata_log.txt", log + "\n\n");
                 throw;
             }
-
         }
     }
 }
-//         {
