@@ -1,5 +1,4 @@
 ﻿using DepoProjesi.Data;
-using DepoProjesi.Helpers;
 using Hangfire;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
@@ -19,9 +18,6 @@ namespace DepoProjesi
             builder.Services.AddHangfire(config =>
                 config.UseSqlServerStorage(builder.Configuration.GetConnectionString("DepoDb")));
             builder.Services.AddHangfireServer();
-
-            builder.Services.AddSingleton<MailHelper>();
-            builder.Services.AddScoped<StockChecker>(); // <--- Kritik stok kontrol servisi
 
             builder.Services.AddControllersWithViews();
             builder.Services.AddSession();
@@ -55,13 +51,6 @@ namespace DepoProjesi
             app.UseSession();
             app.UseAuthentication();
             app.UseAuthorization();
-
-
-            //  Zamanlanmış Görev – Her saat başı kritik stokları kontrol et
-            RecurringJob.AddOrUpdate<StockChecker>(
-                "kritik-stok-kontrolu",
-                checker => checker.CheckAndSendAsync(),
-                Cron.Hourly);
 
             app.MapControllerRoute(
                 name: "default",

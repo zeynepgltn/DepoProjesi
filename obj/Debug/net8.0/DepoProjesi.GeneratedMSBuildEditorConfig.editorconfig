@@ -17,73 +17,73 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DepoProjesi
 build_property.RootNamespace = DepoProjesi
-build_property.ProjectDir = C:\Users\Zeynep\source\repos\DepoProjesi\
+build_property.ProjectDir = C:\Users\Zeynep\OneDrive - Manisa Celal Bayar Üniversitesi\Masaüstü\DepoProjesi\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Zeynep\source\repos\DepoProjesi
+build_property.MSBuildProjectDirectory = C:\Users\Zeynep\OneDrive - Manisa Celal Bayar Üniversitesi\Masaüstü\DepoProjesi
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/Account/Login.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/Home/Index.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/Product/Create.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/Product/DeleteProductView.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/Product/DeleteProductView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGVQcm9kdWN0Vmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/Product/List.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/Product/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/Product/UpdateProductView.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/Product/UpdateProductView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGVQcm9kdWN0Vmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/Product/UpdateStockView.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/Product/UpdateStockView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGVTdG9ja1ZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/Shared/Error.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/Stock/Consumed.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/Stock/Consumed.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tcQ29uc3VtZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/Stock/StockChart.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/Stock/StockChart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tcU3RvY2tDaGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/Stock/StockTracking.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/Stock/StockTracking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tcU3RvY2tUcmFja2luZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/_ViewImports.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/_ViewStart.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Zeynep/source/repos/DepoProjesi/Views/Shared/_Layout.cshtml]
+[C:/Users/Zeynep/OneDrive - Manisa Celal Bayar Üniversitesi/Masaüstü/DepoProjesi/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6djhbizu6l

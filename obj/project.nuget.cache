@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3X2no22pmyY=",
+  "dgSpecHash": "YnmYbVI4Txo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Zeynep\\source\\repos\\DepoProjesi\\DepoProjesi.csproj",
+  "projectFilePath": "C:\\Users\\Zeynep\\OneDrive - Manisa Celal Bayar Üniversitesi\\Masaüstü\\DepoProjesi\\DepoProjesi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Zeynep\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Zeynep\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
